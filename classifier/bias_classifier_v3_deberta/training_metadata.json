@@ -1,0 +1,47 @@
+{
+  "project_root": "/content/drive/MyDrive/USC_DSCI531_Project",
+  "data_path": "/content/drive/MyDrive/USC_DSCI531_Project/data/processed/qbias_all_clean.csv",
+  "output_dir": "/content/drive/MyDrive/USC_DSCI531_Project/models/bias_classifier_v3_deberta",
+  "results_dir": "/content/drive/MyDrive/USC_DSCI531_Project/results/bias_classifier_v3_deberta",
+  "model_name": "roberta-base",
+  "num_classes": 3,
+  "label_to_idx": {
+    "left": 0,
+    "center": 1,
+    "right": 2
+  },
+  "idx_to_label": {
+    "0": "left",
+    "1": "center",
+    "2": "right"
+  },
+  "max_length": 512,
+  "batch_size": 8,
+  "epochs": 6,
+  "patience": 2,
+  "encoder_lr": 1e-05,
+  "head_lr": 3e-05,
+  "weight_decay": 0.01,
+  "label_smoothing": 0.0,
+  "unfreeze_top_n": null,
+  "use_bf16": false,
+  "epochs_trained": 6,
+  "best_val_macro_f1": 0.6071656241858621,
+  "best_val_loss": 1.1044058906261458,
+  "test_accuracy": 0.6095238095238096,
+  "test_loss": 1.105691229605856,
+  "test_macro_f1": 0.5989049266934614,
+  "train_size": 9795,
+  "val_size": 2100,
+  "test_size": 2100,
+  "class_weights": [
+    0.6675711274147034,
+    1.42074453830719,
+    0.9116843938827515
+  ],
+  "data_distribution": {
+    "left": 6356,
+    "center": 2986,
+    "right": 4653
+  }
+}
